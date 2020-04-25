@@ -3,6 +3,7 @@ import App from './App';
 import { withA11y } from '@storybook/addon-a11y';
 import { withTests } from '@storybook/addon-jest';
 import results from '../.test-results.json';
+import Paths from '../utilities/routing/Path';
 
 export default {
 	title: 'App',
@@ -13,4 +14,4 @@ export default {
 	},
 };
 
-export const Default = (): JSX.Element => <App />;
+export const Default = (): JSX.Element => <App paths={Paths()}></App>;
