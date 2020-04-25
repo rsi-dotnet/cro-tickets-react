@@ -25,7 +25,12 @@ module.exports = {
 	},
 	plugins: ['prettier', 'react', 'jest', '@typescript-eslint'],
 	rules: {
-		'prettier/prettier': 'error',
+		'prettier/prettier': [
+			'error',
+			{
+				endOfLine: 'auto',
+			},
+		],
 		'object-shorthand': ['error', 'always'],
 		curly: 'error',
 		'no-alert': 'error',
