@@ -1,8 +1,8 @@
 import LinkPath from './LinkPath';
-import Landing from '../../features/layout/landing/Landing';
+import RoutePaths from './RoutePaths';
 
 const Paths = (): Array<LinkPath> => {
-	return [new LinkPath('/', 'Home', Landing)];
+	return [RoutePaths.Universal, RoutePaths.Home];
 };
 
 export default Paths;
