@@ -1,7 +1,7 @@
-import String from './StringUtilities';
+import StringUtility from './StringUtilities';
 
 describe('String', () => {
 	it('Empty returns empty string', () => {
-		expect(String.Empty).toStrictEqual('');
+		expect(StringUtility.Empty()).toStrictEqual('');
 	});
 });

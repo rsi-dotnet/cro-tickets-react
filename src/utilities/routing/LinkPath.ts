@@ -1,4 +1,4 @@
-class LinkPath {
+export default class LinkPath {
 	constructor(private path: string, private pathName: string, private component: React.FC<{}>) {}
 
 	public get Path(): string {
@@ -13,5 +13,3 @@ class LinkPath {
 		return this.component;
 	}
 }
-
-export default LinkPath;
